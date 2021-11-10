@@ -41,7 +41,6 @@ public class homepage extends AppCompatActivity {
                             selectedFragment = new online();
                             Bundle bundle = new Bundle();
                             bundle.putString("Logintime",getLogintime());
-
                             selectedFragment.setArguments(bundle);
                             break;
                         case R.id.last:

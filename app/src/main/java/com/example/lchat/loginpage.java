@@ -30,7 +30,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public class loginpage extends AppCompatActivity {
-    Button login;
+    Button login,register;
     TextView textView;
     EditText inputEmail, inputPassword;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+//.+[a-z]+";
@@ -45,11 +45,22 @@ public class loginpage extends AppCompatActivity {
         setContentView(R.layout.activity_loginpage);
 
         login = findViewById(R.id.login);
+        register = findViewById(R.id.reg);
+
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(loginpage.this,register_page.class);
+                loginpage.this.startActivity(mainIntent);
+                loginpage.this.finish();
+            }
+        });
 
 
 
@@ -60,6 +71,7 @@ public class loginpage extends AppCompatActivity {
             }
         });
     }
+
 
 
 
@@ -82,9 +94,7 @@ public class loginpage extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-
                         output =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(new Date());
-
                         progressDialog.dismiss();
                         sendUserToNextActivity();
                         Toast.makeText(loginpage.this, "Login Successfull", Toast.LENGTH_SHORT).show();
