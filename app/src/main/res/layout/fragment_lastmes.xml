@@ -6,26 +6,15 @@
     tools:context=".lastmes">
 
     <Button
-        android:id="@+id/msgseen"
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext"
         android:layout_gravity="center"
-        android:text="Message Time">
+        android:text="Logout">
 
     </Button>
 
-    <TextView
-        android:id="@+id/msgLast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sfss"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
-        >
-
-    </TextView>
 
 
 </FrameLayout>

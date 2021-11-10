@@ -6,7 +6,7 @@
         android:title="Chat">
 
     </item>
-    <item android:id="@+id/online"
+    <item android:id="@+id/onlineShow"
         android:icon="@drawable/stopwatch"
         android:title="Online">
 
