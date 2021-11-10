@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LChat">
         <activity
+            android:name=".homepage"
+            android:exported="false" />
+        <activity
             android:name=".loginpage"
             android:exported="false" />
         <activity
