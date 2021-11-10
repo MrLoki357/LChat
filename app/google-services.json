@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956449355292",
+    "project_id": "lchat-cb334",
+    "storage_bucket": "lchat-cb334.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956449355292:android:d5b088d2fd933b94ff91d9",
+        "android_client_info": {
+          "package_name": "com.example.lchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956449355292-c3ems869secdig0ld6ufk8c1dhjbt9dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAUkCO8zsexzXCO-Z44kkDgv489LmxrTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956449355292-c3ems869secdig0ld6ufk8c1dhjbt9dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
